@@ -17,7 +17,7 @@
 							<?php the_excerpt(); ?>
 
 							<footer>
-								<small><?php the_tags(); ?></small>
+								<small><?php the_tags(); ?> <?php the_author(); ?></small>
 							</footer>
 						</article>
 
