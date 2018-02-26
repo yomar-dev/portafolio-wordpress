@@ -5,12 +5,15 @@
 	<div class="grid max-width">
 		<div class="block grid--item-9">
 			<div class="block__title">
-				Bloque Principal
+				Últimos Trabajos
 			</div>
 			<div class="block__body">
-				<p>
-					Cottonseed embryoniferous dialogite osteohalisteresis eudaemonics ultimateness buckboard untheologize fumet subbeau admaxillary headache Notharctidae ayacahuite resina impresa achingly unexperiencedness accurately pilikai unidentate onychotrophy bastide unimpedness.
-				</p>
+				<?php if(have_posts()): ?>
+					<?php while (have_posts()): ?>
+						<?php the_post(); ?>
+						<h2><?php the_title(); ?></h2>
+					<?php endwhile; ?>
+				<?php endif; ?>
 			</div>
 		</div>
 
