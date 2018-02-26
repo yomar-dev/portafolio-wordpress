@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 <body>
 	<h1 class="page-heading max-width"><?= bloginfo('name'); ?></h1>
 
