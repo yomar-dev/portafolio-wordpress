@@ -15,6 +15,10 @@
 						<article>							
 							<h2><?php the_title(); ?></h2>
 							<?php the_excerpt(); ?>
+
+							<footer>
+								<small><?php the_tags(); ?></small>
+							</footer>
 						</article>
 
 					<?php endwhile; ?>
