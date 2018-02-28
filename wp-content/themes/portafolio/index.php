@@ -28,6 +28,7 @@
 								<div>
 									<strong><?php the_author(); ?></strong>
 								</div>
+								<a href="<?php the_permalink(); ?>">Leer Más</a>
 							</footer>
 						</article>
 
