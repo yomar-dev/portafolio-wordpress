@@ -9,7 +9,7 @@
 			</div>
 			<div class="block__body">
 				<?php 
-					$args = array('cat' => 5);
+					$args = array('cat' => -5);
 					$filter_posts = new WP_Query($args);
 					if($filter_posts->have_posts()):
 				?>
