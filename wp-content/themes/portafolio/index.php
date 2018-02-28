@@ -8,9 +8,13 @@
 				Últimos Trabajos
 			</div>
 			<div class="block__body">
-				<?php if(have_posts()): ?>
-					<?php while (have_posts()): ?>
-						<?php the_post(); ?>
+				<?php 
+					$args = array('cat' => 5);
+					$category_posts = new WP_Query($args);
+					if($category_posts->have_posts()):
+				?>
+					<?php while ($category_posts->have_posts()): ?>
+						<?php $category_posts->the_post(); ?>
 
 						<article>							
 							<h2><?php the_title(); ?></h2>
