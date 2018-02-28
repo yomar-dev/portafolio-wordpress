@@ -10,11 +10,11 @@
 			<div class="block__body">
 				<?php 
 					$args = array('cat' => 5);
-					$category_posts = new WP_Query($args);
-					if($category_posts->have_posts()):
+					$filter_posts = new WP_Query($args);
+					if($filter_posts->have_posts()):
 				?>
-					<?php while ($category_posts->have_posts()): ?>
-						<?php $category_posts->the_post(); ?>
+					<?php while ($filter_posts->have_posts()): ?>
+						<?php $filter_posts->the_post(); ?>
 
 						<article>							
 							<h2><?php the_title(); ?></h2>
