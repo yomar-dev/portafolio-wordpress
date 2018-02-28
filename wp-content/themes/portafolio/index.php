@@ -17,11 +17,19 @@
 							<?php the_excerpt(); ?>
 
 							<footer>
-								<small><?php the_tags(); ?> <?php the_author(); ?></small>
+								<div>
+									<small><?php the_tags(); ?></small>
+								</div>
+
+								<div>
+									<strong><?php the_author(); ?></strong>
+								</div>
 							</footer>
 						</article>
 
 					<?php endwhile; ?>
+				<?php else: ?>
+					<h4>No se encontraron entradas</h4>
 				<?php endif; ?>
 			</div>
 		</div>
