@@ -3,7 +3,7 @@
 	<h1 class="page-heading max-width">Categoria: <?= single_cat_title(); ?></h1>
 
 	<div class="grid max-width">
-		<div class="block grid--item-12">
+		<div class="block grid--item-9">
 			<div class="block__body grid">
 				<?php if(have_posts()): ?>
 					<?php while (have_posts()): ?>
@@ -35,6 +35,7 @@
 				<?php wp_reset_postdata(); ?>
 			</div>
 		</div>
+		<?php get_sidebar(); ?>
 	</div>
 
 	<?php get_footer(); ?>
