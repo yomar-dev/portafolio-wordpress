@@ -18,6 +18,11 @@
 
 						<article>							
 							<h2><?php the_title(); ?></h2>
+							<?php 
+								if(has_post_thumbnail()):
+									the_post_thumbnail();
+								endif; 
+							?>
 							<?php the_excerpt(); ?>
 
 							<footer>
