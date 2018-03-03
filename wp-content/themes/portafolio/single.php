@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<body>
+
 
 			<div class="block__body">
 				<?php if(have_posts()): ?>

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<body>
+
 	<h1 class="page-heading max-width">Categoria: <?= single_cat_title(); ?></h1>
 
 	<div class="grid max-width">
