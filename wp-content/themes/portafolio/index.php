@@ -20,7 +20,12 @@
 							<h2><?php the_title(); ?></h2>
 							<?php 
 								if(has_post_thumbnail()):
-									echo the_post_thumbnail_url('thumbnail');
+							?>
+									<picture>
+										<source srcset="<?php the_post_thumbnail_url('full'); ?>" media="(min-width: 600px)">
+										<img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="">
+									</picture>
+							<?php
 								endif; 
 							?>
 							<?php the_excerpt(); ?>
