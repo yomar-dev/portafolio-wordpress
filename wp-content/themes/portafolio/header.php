@@ -9,3 +9,10 @@
 	<link rel="stylesheet" href="<?= bloginfo('stylesheet_url'); ?>">
 </head>
 <body>
+<?php 
+	wp_nav_menu(
+		array(
+			'theme_location' => 'top-menu'
+		)
+	);
+?>
